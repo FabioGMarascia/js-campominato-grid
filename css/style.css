@@ -5,26 +5,10 @@ body {
 	font-family: sans-serif;
 }
 
-/* CONTAINERS */
-.easy-container {
-	width: 800px;
-	margin: 0 auto;
-}
-
-.medium-container {
-	width: 720px;
-	margin: 0 auto;
-}
-
-.hard-container {
-	width: 560px;
-	margin: 0 auto;
-}
-
 .square {
 	width: 80px;
 	height: 80px;
-	border: 1px solid blue;
+	border: 2px solid blue;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -36,14 +20,23 @@ body {
 	cursor: pointer;
 }
 
-.deb {
-	border: 1px solid green;
-}
-
-#btn {
+#btn,
+.select-input,
+.easy-container,
+.medium-container,
+.hard-container {
 	margin: 0 auto;
 }
 
-.select-input {
-	margin: 0 auto;
+/* CONTAINERS */
+.easy-container {
+	width: 800px;
+}
+
+.medium-container {
+	width: 720px;
+}
+
+.hard-container {
+	width: 560px;
 }

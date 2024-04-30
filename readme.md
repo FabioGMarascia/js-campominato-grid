@@ -12,4 +12,4 @@ MILESTONE #3
 
 MILESTONE #4
 
--  Spostate il codice in funzioni, come quello che crea le celle e l'event listener.
+-  Spostare il codice in funzioni, come quello che crea le celle e l'event listener.
