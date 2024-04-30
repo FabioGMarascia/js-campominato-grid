@@ -8,6 +8,7 @@ body {
 .little-container {
 	width: 800px;
 	margin: 0 auto;
+	display: hidden;
 }
 
 .square {
@@ -23,4 +24,12 @@ body {
 
 .square:hover {
 	cursor: pointer;
+}
+
+.deb {
+	border: 1px solid green;
+}
+
+#btn {
+	margin: 0 auto;
 }
