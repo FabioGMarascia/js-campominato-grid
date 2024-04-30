@@ -18,22 +18,32 @@
 		<title>CAMPOMINATO GRID</title>
 	</head>
 	<body>
-		<h1 class="text-center fw-bold display-4 m-3">CAMPOMINATO GRID</h1>
-		<div class="little-container d-flex flex-wrap">
-			<!-- <div class="deb square">5</div>
-			<div class="square">5</div>
-			<div class="square">5</div>
-			<div class="square">5</div>
-			<div class="square">5</div>
-			<div class="square">5</div>
-			<div class="square">5</div>
-			<div class="square">5</div>
-			<div class="square">5</div>
-			<div class="square">5</div> -->
+		<div class="row justify-content-center m-0">
+			<div class="col-2 m-0 align-self-center select-input py-4">
+				<select
+					class="form-select text-center my-3 mx-auto w-75"
+					aria-label="Default select example">
+					<option selected>Select a game mode</option>
+					<option value="1">Easy</option>
+					<option value="2">Medium</option>
+					<option value="3">Hard</option>
+				</select>
+
+				<div class="text-center my-4">
+					<button id="btn" class="btn bg-warning my-2 rounded fw-bold fs-4 p-3">
+						PLAY GAME
+					</button>
+				</div>
+			</div>
+
+			<div class="col-5">
+				<h1 class="text-center fw-bold display-4 mt-4">CAMPOMINATO GRID</h1>
+				<div class="easy-container d-flex flex-wrap d-none"></div>
+				<div class="medium-container d-flex flex-wrap d-none"></div>
+				<div class="hard-container d-flex flex-wrap d-none"></div>
+			</div>
 		</div>
-		<div class="row m-0">
-			<button id="btn" class="col-1 bg-warning my-2 rounded fw-bold fs-5">AVVIA GIOCO</button>
-		</div>
+
 		<script type="text/javascript" src="./js/functions.js"></script>
 		<script type="text/javascript" src="./js/script.js"></script>
 	</body>

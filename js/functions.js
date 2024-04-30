@@ -14,3 +14,22 @@ function createClickableSquare(number) {
 
 	return element;
 }
+
+function displayGrid() {
+	if (select_value.value == 1) {
+		easy_container.classList.remove(`d-none`);
+		medium_container.classList.add(`d-none`);
+		hard_container.classList.add(`d-none`);
+	} else if (select_value.value == 2) {
+		easy_container.classList.add(`d-none`);
+		medium_container.classList.remove(`d-none`);
+		hard_container.classList.add(`d-none`);
+	} else if (select_value.value == 3) {
+		easy_container.classList.add(`d-none`);
+		medium_container.classList.add(`d-none`);
+		hard_container.classList.remove(`d-none`);
+	} else {
+		select_value.value = `Select a game mode`;
+		location.reload();
+	}
+}
