@@ -1,7 +1,7 @@
 /********************* COMMON **********************/
 body {
 	background-color: #222;
-	color: white;
+	color: red;
 	font-family: sans-serif;
 }
 
@@ -17,4 +17,10 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.square:hover {
+	cursor: pointer;
 }
