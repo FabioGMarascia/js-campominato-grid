@@ -5,17 +5,16 @@ body {
 	font-family: sans-serif;
 }
 
-.deb {
-	border: 2px dashed red;
-}
-
 .little-container {
 	width: 800px;
-	text-align: center;
 	margin: 0 auto;
 }
 
 .square {
 	width: 80px;
 	height: 80px;
+	border: 1px solid blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
