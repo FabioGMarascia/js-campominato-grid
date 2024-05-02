@@ -1,30 +1,40 @@
-const easy_container = document.querySelector(`.easy-container`);
-const medium_container = document.querySelector(`.medium-container`);
-const hard_container = document.querySelector(`.hard-container`);
+const container = document.querySelector(`.easy-container`);
 const play_button = document.querySelector(`#btn`);
 const select_value = document.querySelector(`.form-select`);
 
 select_value.value = `Select a game mode`;
 
-// ITERATION FOR EASY MODE
-for (let i = 1; i < 101; i++) {
-	let square = createClickableSquare(i);
-	easy_container.append(square);
-}
-
-// ITERATION FOR MEDIUM MODE
-for (let i = 1; i < 82; i++) {
-	let square = createClickableSquare(i);
-	medium_container.append(square);
-}
-
-// ITERATION FOR HARD MODE
-for (let i = 1; i < 50; i++) {
-	let square = createClickableSquare(i);
-	hard_container.append(square);
-}
-
 play_button.addEventListener(`click`, function () {
-	// USELESS FUNCTION
-	displayGrid(easy_container, medium_container, hard_container);
+	container.innerHTML = " ";
+	if (select_value.value == 1) {
+		// ITERATION FOR EASY MODE
+		for (let i = 1; i < 101; i++) {
+			container.classList.add(`easy-container`);
+			container.classList.remove(`medium-container`);
+			container.classList.remove(`hard-container`);
+			let square = createClickableSquare(i);
+			container.append(square);
+		}
+	} else if (select_value.value == 2) {
+		// ITERATION FOR MEDIUM MODE
+		for (let i = 1; i < 82; i++) {
+			container.classList.remove(`easy-container`);
+			container.classList.add(`medium-container`);
+			container.classList.remove(`hard-container`);
+			let square = createClickableSquare(i);
+			container.append(square);
+		}
+	} else if (select_value.value == 3) {
+		// ITERATION FOR HARD MODE
+		for (let i = 1; i < 50; i++) {
+			container.classList.remove(`easy-container`);
+			container.classList.remove(`medium-container`);
+			container.classList.add(`hard-container`);
+			let square = createClickableSquare(i);
+			container.append(square);
+		}
+	} else {
+		select_value.value = `Select a game mode`;
+		location.reload();
+	}
 });
