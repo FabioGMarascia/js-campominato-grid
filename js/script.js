@@ -2,7 +2,7 @@ const container = document.querySelector(`.easy-container`);
 const play_button = document.querySelector(`#btn`);
 const select_value = document.querySelector(`.form-select`);
 
-select_value.value = `Select a game mode`;
+select_value.value = `SELECT GAME MODE`;
 
 play_button.addEventListener(`click`, function () {
 	container.innerHTML = " ";
@@ -34,7 +34,7 @@ play_button.addEventListener(`click`, function () {
 			container.append(square);
 		}
 	} else {
-		select_value.value = `Select a game mode`;
+		select_value.value = `SELECT GAME MODE`;
 		location.reload();
 	}
 });
