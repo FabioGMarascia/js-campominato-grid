@@ -25,6 +25,6 @@ for (let i = 1; i < 50; i++) {
 }
 
 play_button.addEventListener(`click`, function () {
-	// USELESS FUNCTION - CREATED FOR TESTING
-	displayGrid();
+	// USELESS FUNCTION
+	displayGrid(easy_container, medium_container, hard_container);
 });
